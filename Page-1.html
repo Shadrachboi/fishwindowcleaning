@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fish Window Cleaning - Professional Window Cleaning Services</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0072CE',secondary:'#F7F7F7'},borderRadius:{'none':'0px','sm':'8px',DEFAULT:'12px','md':'16px','lg':'20px','xl':'24px','2xl':'28px','3xl':'32px','full':'9999px','button':'12px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif;
+}
+.hero-overlay {
+background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+}
+.testimonial-card {
+transition: all 0.3s ease;
+}
+.testimonial-card:hover {
+transform: translateY(-5px);
+}
+.custom-checkbox {
+appearance: none;
+-webkit-appearance: none;
+width: 20px;
+height: 20px;
+border: 2px solid #0072CE;
+border-radius: 4px;
+outline: none;
+cursor: pointer;
+position: relative;
+}
+.custom-checkbox:checked {
+background-color: #0072CE;
+}
+.custom-checkbox:checked::after {
+content: '';
+position: absolute;
+left: 6px;
+top: 2px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.custom-switch {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 24px;
+}
+.custom-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: .4s;
+border-radius: 34px;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 3px;
+bottom: 3px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .slider {
+background-color: #0072CE;
+}
+input:checked + .slider:before {
+transform: translateX(26px);
+}
+.benefit-card {
+transition: all 0.3s ease;
+}
+.benefit-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<h1 class="text-3xl font-['Pacifico'] text-primary">Fish Window Cleaning</h1>
+</div>
+<div class="flex items-center space-x-4">
+<div class="hidden md:flex space-x-3">
+<a href="#" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary">
+<i class="ri-instagram-line ri-lg"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary">
+<i class="ri-youtube-fill ri-lg"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary">
+<i class="ri-twitter-x-fill ri-lg"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary">
+<i class="ri-pinterest-fill ri-lg"></i>
+</a>
+</div>
+<button class="bg-primary text-white px-5 py-2 font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-all">
+Request a Free Estimate
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative pt-20" style="background-image: url('https://public.readdy.ai/ai/img_res/64c3bcc972bf00135328142c034c5aa5.jpg'); background-size: cover; background-position: center;">
+<div class="hero-overlay absolute inset-0"></div>
+<div class="container mx-auto px-4 py-32 relative z-10">
+<div class="max-w-2xl">
+<h2 class="text-5xl font-bold text-white mb-6">Professional Window Cleaning Services</h2>
+<p class="text-xl text-white mb-8">Providing crystal-clear results for residential and commercial properties for over 40 years.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-3 font-semibold !rounded-button whitespace-nowrap hover:bg-primary/90 transition-all text-lg">
+Get Your Free Quote
+</button>
+<button class="bg-white text-primary px-8 py-3 font-semibold !rounded-button whitespace-nowrap hover:bg-gray-100 transition-all text-lg">
+Learn More
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<img src="https://public.readdy.ai/ai/img_res/4b62a3cf3317285e295dc39181c570f2.jpg" alt="Professional Window Cleaners" class="rounded shadow-lg w-full h-auto">
+</div>
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold mb-6">About Fish Window Cleaning</h2>
+<p class="text-lg mb-6">Since 1978, Fish Window Cleaning has been providing exceptional window cleaning services to both residential and commercial customers across the United States. With over 40 years of experience and 270+ locations nationwide, we've established ourselves as the leader in the window cleaning industry.</p>
+<div class="grid grid-cols-2 gap-6 mb-8">
+<div class="bg-gray-50 p-6 rounded shadow-sm">
+<div class="text-primary mb-2 w-10 h-10 flex items-center justify-center">
+<i class="ri-building-line ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold">270+</h3>
+<p>Locations Nationwide</p>
+</div>
+<div class="bg-gray-50 p-6 rounded shadow-sm">
+<div class="text-primary mb-2 w-10 h-10 flex items-center justify-center">
+<i class="ri-calendar-line ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold">40+</h3>
+<p>Years of Experience</p>
+</div>
+<div class="bg-gray-50 p-6 rounded shadow-sm">
+<div class="text-primary mb-2 w-10 h-10 flex items-center justify-center">
+<i class="ri-user-smile-line ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold">100K+</h3>
+<p>Satisfied Customers</p>
+</div>
+<div class="bg-gray-50 p-6 rounded shadow-sm">
+<div class="text-primary mb-2 w-10 h-10 flex items-center justify-center">
+<i class="ri-award-line ri-2x"></i>
+</div>
+<h3 class="text-2xl font-bold">#1</h3>
+<p>Window Cleaning Service</p>
+</div>
+</div>
+<button class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-all">
+Learn More About Us
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold mb-4">Why Choose Fish Window Cleaning</h2>
+<p class="text-lg max-w-3xl mx-auto">Our professional window cleaners provide reliable, high-quality service that keeps your windows looking their best year-round.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="benefit-card bg-white p-8 rounded shadow-sm">
+<div class="text-primary mb-4 w-12 h-12 flex items-center justify-center">
+<i class="ri-time-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Prompt & Reliable Service</h3>
+<p>Our team arrives on time and completes the job efficiently without sacrificing quality.</p>
+</div>
+<div class="benefit-card bg-white p-8 rounded shadow-sm">
+<div class="text-primary mb-4 w-12 h-12 flex items-center justify-center">
+<i class="ri-store-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Locally Owned & Operated</h3>
+<p>Each location is independently owned, providing personalized service with national backing.</p>
+</div>
+<div class="benefit-card bg-white p-8 rounded shadow-sm">
+<div class="text-primary mb-4 w-12 h-12 flex items-center justify-center">
+<i class="ri-calendar-check-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Flexible Scheduling</h3>
+<p>Choose from one-time cleanings or ongoing maintenance plans tailored to your needs.</p>
+</div>
+<div class="benefit-card bg-white p-8 rounded shadow-sm">
+<div class="text-primary mb-4 w-12 h-12 flex items-center justify-center">
+<i class="ri-map-pin-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Nationwide Coverage</h3>
+<p>With 270+ locations, we can provide consistent service across multiple properties.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
+<p class="text-lg max-w-3xl mx-auto">Don't just take our word for it. Here's what our satisfied customers have to say about our services.</p>
+</div>
+<div class="relative">
+<div class="flex overflow-x-auto pb-8 gap-6 hide-scrollbar">
+<div class="testimonial-card bg-gray-50 p-8 rounded shadow-sm min-w-[350px] flex-shrink-0">
+<div class="flex items-center text-yellow-400 mb-4">
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<p class="mb-6 italic">"Fish Window Cleaning has been cleaning our office windows for over 5 years. They're always professional, thorough, and leave our windows spotless. Highly recommend their services!"</p>
+<div>
+<h4 class="font-bold">Michael Richardson</h4>
+<p class="text-sm">Office Manager, Richardson & Associates</p>
+</div>
+</div>
+<div class="testimonial-card bg-gray-50 p-8 rounded shadow-sm min-w-[350px] flex-shrink-0">
+<div class="flex items-center text-yellow-400 mb-4">
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<p class="mb-6 italic">"I've been using Fish Window Cleaning for my home for the past 3 years. The team is always punctual, courteous, and does an amazing job. My windows have never looked better!"</p>
+<div>
+<h4 class="font-bold">Jennifer Thompson</h4>
+<p class="text-sm">Homeowner, Lakeside Estates</p>
+</div>
+</div>
+<div class="testimonial-card bg-gray-50 p-8 rounded shadow-sm min-w-[350px] flex-shrink-0">
+<div class="flex items-center text-yellow-400 mb-4">
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<p class="mb-6 italic">"As a property manager overseeing multiple commercial buildings, I rely on Fish Window Cleaning for consistent, quality service. They never disappoint and are a pleasure to work with."</p>
+<div>
+<h4 class="font-bold">David Martinez</h4>
+<p class="text-sm">Property Manager, Westside Properties</p>
+</div>
+</div>
+<div class="testimonial-card bg-gray-50 p-8 rounded shadow-sm min-w-[350px] flex-shrink-0">
+<div class="flex items-center text-yellow-400 mb-4">
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<p class="mb-6 italic">"The team at Fish Window Cleaning is exceptional. They cleaned our restaurant's windows and made them sparkle like never before. Our customers have even commented on how great they look!"</p>
+<div>
+<h4 class="font-bold">Sarah Johnson</h4>
+<p class="text-sm">Owner, Riverfront Bistro</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-6 gap-2">
+<button class="w-3 h-3 rounded-full bg-primary"></button>
+<button class="w-3 h-3 rounded-full bg-gray-300"></button>
+<button class="w-3 h-3 rounded-full bg-gray-300"></button>
+<button class="w-3 h-3 rounded-full bg-gray-300"></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Pledge Section -->
+<section class="py-20 bg-blue-50">
+<div class="container mx-auto px-4 text-center">
+<div class="text-primary mb-6 w-16 h-16 mx-auto flex items-center justify-center">
+<i class="ri-shield-check-line ri-3x"></i>
+</div>
+<h2 class="text-3xl font-bold mb-6">Our Customer Pledge</h2>
+<p class="text-xl max-w-3xl mx-auto mb-10">At Fish Window Cleaning, we are committed to providing superior service and complete customer satisfaction. Our goal is to exceed your expectations with every visit.</p>
+<div class="flex flex-col md:flex-row justify-center gap-8 max-w-4xl mx-auto">
+<div class="bg-white p-8 rounded shadow-sm flex-1">
+<div class="text-primary mb-4 w-12 h-12 mx-auto flex items-center justify-center">
+<i class="ri-shield-user-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Fully Insured</h3>
+<p>Our services are fully insured, providing you with peace of mind knowing that your property is protected.</p>
+</div>
+<div class="bg-white p-8 rounded shadow-sm flex-1">
+<div class="text-primary mb-4 w-12 h-12 mx-auto flex items-center justify-center">
+<i class="ri-lock-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Bonded Professionals</h3>
+<p>All our window cleaning professionals are bonded, ensuring reliability and security for your home or business.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Franchise Information Section -->
+<section class="relative py-20">
+<div style="background-image: url('https://public.readdy.ai/ai/img_res/8bff00958691054f890a98e646d63b4b.jpg'); background-size: cover; background-position: center;" class="absolute inset-0 opacity-20"></div>
+<div class="container mx-auto px-4 relative z-10">
+<div class="max-w-2xl">
+<h2 class="text-3xl font-bold mb-6">Own a Fish Window Cleaning Franchise</h2>
+<p class="text-lg mb-8">Join our successful network of over 270 franchise owners across the United States. With comprehensive training and ongoing support, you can build a thriving business in your community.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<div class="bg-white p-6 rounded shadow-sm">
+<h3 class="text-2xl font-bold text-primary">$125K+</h3>
+<p>Average Annual Revenue</p>
+</div>
+<div class="bg-white p-6 rounded shadow-sm">
+<h3 class="text-2xl font-bold text-primary">270+</h3>
+<p>Successful Franchises</p>
+</div>
+<div class="bg-white p-6 rounded shadow-sm">
+<h3 class="text-2xl font-bold text-primary">40+ Years</h3>
+<p>Proven Business Model</p>
+</div>
+</div>
+<button class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-primary/90 transition-all">
+Learn More About Franchising
+</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+<div>
+<h3 class="text-2xl font-['Pacifico'] text-white mb-6">Fish Window Cleaning</h3>
+<p class="mb-6">Professional window cleaning services for residential and commercial properties nationwide.</p>
+<div class="flex items-center space-x-4 mb-6">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-all">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-all">
+<i class="ri-instagram-line ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-all">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-all">
+<i class="ri-youtube-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-all">
+<i class="ri-twitter-x-fill ri-lg"></i>
+</a>
+</div>
+<div>
+<p class="flex items-center mb-2">
+<span class="w-6 h-6 flex items-center justify-center mr-2">
+<i class="ri-phone-line"></i>
+</span>
+1-800-872-1750
+</p>
+<p class="flex items-center mb-2">
+<span class="w-6 h-6 flex items-center justify-center mr-2">
+<i class="ri-mail-line"></i>
+</span>
+info@fishwindowcleaning.com
+</p>
+<p class="flex items-center">
+<span class="w-6 h-6 flex items-center justify-center mr-2">
+<i class="ri-map-pin-line"></i>
+</span>
+Headquarters: St. Louis, MO
+</p>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Services</h4>
+<ul class="space-y-3">
+<li><a href="#" class="hover:text-primary transition-all">Residential Window Cleaning</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Commercial Window Cleaning</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Gutter Cleaning</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Ceiling Fan Cleaning</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Chandelier Cleaning</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Mirror & Glass Cleaning</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Screen Repair</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Company</h4>
+<ul class="space-y-3 mb-8">
+<li><a href="#" class="hover:text-primary transition-all">About Us</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Franchise Opportunities</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Careers</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Locations</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Contact Us</a></li>
+</ul>
+<h4 class="text-lg font-bold mb-6">Legal</h4>
+<ul class="space-y-3">
+<li><a href="#" class="hover:text-primary transition-all">Privacy Policy</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Terms of Service</a></li>
+<li><a href="#" class="hover:text-primary transition-all">Site Map</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
+<p>&copy; 2025 Fish Window Cleaning. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+// Simple testimonial carousel functionality
+const testimonialDots = document.querySelectorAll('.flex.justify-center.mt-6.gap-2 button');
+testimonialDots.forEach((dot, index) => {
+dot.addEventListener('click', () => {
+// Reset all dots
+testimonialDots.forEach(d => {
+d.classList.remove('bg-primary');
+d.classList.add('bg-gray-300');
+});
+// Set active dot
+dot.classList.remove('bg-gray-300');
+dot.classList.add('bg-primary');
+// Here you would normally scroll to the corresponding testimonial
+// This is a simplified version
+const testimonialContainer = document.querySelector('.flex.overflow-x-auto');
+const testimonialWidth = 350 + 24; // width + gap
+testimonialContainer.scrollTo({
+left: index * testimonialWidth,
+behavior: 'smooth'
+});
+});
+});
+// Auto-rotate testimonials every 5 seconds
+let currentTestimonial = 0;
+setInterval(() => {
+currentTestimonial = (currentTestimonial + 1) % testimonialDots.length;
+testimonialDots[currentTestimonial].click();
+}, 5000);
+</script>
+</body>
+</html>
